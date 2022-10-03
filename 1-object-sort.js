@@ -10,6 +10,8 @@ const countries = [
 ];
 
 function arrSort(arr, property) {
+  const newArr = [...arr];
+
   function mySort(key) {
     let order = 1;
 
@@ -31,7 +33,7 @@ function arrSort(arr, property) {
     };
   }
 
-  return arr.sort(mySort(property));
+  return newArr.sort(mySort(property));
 }
 
 //Test data
